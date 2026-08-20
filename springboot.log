@@ -1,0 +1,111 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.mariageplus:mariageplus-backend >-----------------
+[INFO] Building MariagePlus 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.0:run (default-cli) > test-compile @ mariageplus-backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mariageplus-backend ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 10 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mariageplus-backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ mariageplus-backend ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ mariageplus-backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.2.0:run (default-cli) < test-compile @ mariageplus-backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.0:run (default-cli) @ mariageplus-backend ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-08-19T17:43:10.392+01:00  INFO 11604 --- [           main] com.mariageplus.MariagePlusApplication   : Starting MariagePlusApplication using Java 26.0.2 with PID 11604 (D:\Projet\mariageplus-backend\target\classes started by Ir John Peter in D:\Projet\mariageplus-backend)
+2026-08-19T17:43:10.394+01:00 DEBUG 11604 --- [           main] com.mariageplus.MariagePlusApplication   : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-19T17:43:10.396+01:00  INFO 11604 --- [           main] com.mariageplus.MariagePlusApplication   : The following 1 profile is active: "local"
+2026-08-19T17:43:11.681+01:00  INFO 11604 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-19T17:43:11.804+01:00  INFO 11604 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 17 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/Ir%20John%20Peter/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-08-19T17:43:13.037+01:00  INFO 11604 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8000 (http)
+2026-08-19T17:43:13.064+01:00  INFO 11604 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-19T17:43:13.065+01:00  INFO 11604 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-08-19T17:43:13.176+01:00  INFO 11604 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-19T17:43:13.178+01:00  INFO 11604 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2717 ms
+2026-08-19T17:43:13.226+01:00  INFO 11604 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-19T17:43:13.452+01:00  INFO 11604 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:mariageplus user=SA
+2026-08-19T17:43:13.457+01:00  INFO 11604 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-19T17:43:13.473+01:00  INFO 11604 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:mariageplus'
+2026-08-19T17:43:13.649+01:00  INFO 11604 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2026-08-19T17:43:13.650+01:00  INFO 11604 --- [           main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2026-08-19T17:43:13.651+01:00  INFO 11604 --- [           main] o.f.c.internal.license.VersionPrinter    : 
+2026-08-19T17:43:13.717+01:00  INFO 11604 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:mariageplus (H2 2.2)
+2026-08-19T17:43:13.730+01:00  WARN 11604 --- [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-08-19T17:43:13.749+01:00  INFO 11604 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Repair of failed migration in Schema History table "public"."flyway_schema_history" not necessary as table doesn't exist.
+2026-08-19T17:43:13.764+01:00  INFO 11604 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-08-19T17:43:13.783+01:00  INFO 11604 --- [           main] o.f.core.internal.command.DbRepair       : Successfully repaired schema history table "public"."flyway_schema_history" (execution time 00:00.037s).
+2026-08-19T17:43:13.809+01:00  WARN 11604 --- [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-08-19T17:43:13.847+01:00  INFO 11604 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-08-19T17:43:13.891+01:00  INFO 11604 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-08-19T17:43:13.893+01:00  WARN 11604 --- [           main] o.f.core.internal.command.DbMigrate      : outOfOrder mode is active. Migration of schema "public" may not be reproducible.
+2026-08-19T17:43:13.905+01:00  INFO 11604 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - create core tables"
+2026-08-19T17:43:13.976+01:00  INFO 11604 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - create permissions and seed"
+2026-08-19T17:43:14.072+01:00  INFO 11604 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - create weddings"
+2026-08-19T17:43:14.083+01:00  INFO 11604 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - create wedding events"
+2026-08-19T17:43:14.102+01:00  INFO 11604 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - create guest categories and guests"
+2026-08-19T17:43:14.118+01:00  INFO 11604 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "6 - create invitations"
+2026-08-19T17:43:14.128+01:00  INFO 11604 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "7 - create rsvps"
+2026-08-19T17:43:14.134+01:00  INFO 11604 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "8 - add rsvp number of attendees"
+2026-08-19T17:43:14.144+01:00  INFO 11604 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "9 - create checkins"
+2026-08-19T17:43:14.178+01:00  INFO 11604 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "10 - create wedding tables and assignments"
+2026-08-19T17:43:14.190+01:00  INFO 11604 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 10 migrations to schema "public", now at version v10 (execution time 00:00.216s)
+2026-08-19T17:43:14.291+01:00  INFO 11604 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-19T17:43:14.347+01:00  INFO 11604 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-08-19T17:43:14.388+01:00  INFO 11604 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-08-19T17:43:14.686+01:00  INFO 11604 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-19T17:43:14.730+01:00  WARN 11604 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-08-19T17:43:16.037+01:00  INFO 11604 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19T17:43:16.094+01:00  INFO 11604 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-19T17:43:16.489+01:00  INFO 11604 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-19T17:43:17.130+01:00 DEBUG 11604 --- [           main] c.m.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-08-19T17:43:18.277+01:00  WARN 11604 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19T17:43:18.672+01:00  INFO 11604 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@19b0f61c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d1ddb65, org.springframework.security.web.context.SecurityContextHolderFilter@193bf20, org.springframework.security.web.header.HeaderWriterFilter@79b9ed8d, org.springframework.web.filter.CorsFilter@4c963d59, org.springframework.security.web.authentication.logout.LogoutFilter@2432c72c, com.mariageplus.security.JwtAuthenticationFilter@3a516e4d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31d7e70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@462478a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2dfc833b, org.springframework.security.web.session.SessionManagementFilter@2d68af14, org.springframework.security.web.access.ExceptionTranslationFilter@19a71722, org.springframework.security.web.access.intercept.AuthorizationFilter@6c551798]
+2026-08-19T17:43:18.849+01:00  WARN 11604 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-08-19T17:43:19.512+01:00  INFO 11604 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8000 (http) with context path ''
+2026-08-19T17:43:19.535+01:00  INFO 11604 --- [           main] com.mariageplus.MariagePlusApplication   : Started MariagePlusApplication in 9.696 seconds (process running for 10.202)
+2026-08-19T17:43:19.822+01:00  INFO 11604 --- [           main] com.mariageplus.config.DataInitializer   : Compte SUPER_ADMIN initialisé : admin@mariageplus.local
+2026-08-19T17:46:07.695+01:00  INFO 11604 --- [nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19T17:46:07.696+01:00  INFO 11604 --- [nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-19T17:46:07.699+01:00  INFO 11604 --- [nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-19T17:46:07.769+01:00  WARN 11604 --- [nio-8000-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/swagger-ui.html' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-08-19T17:46:14.512+01:00  INFO 11604 --- [nio-8000-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 4127 ms
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  42:27 min
+[INFO] Finished at: 2026-08-19T18:25:25+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.0:run (default-cli) on project mariageplus-backend: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
